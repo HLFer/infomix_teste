@@ -24,6 +24,7 @@ Class Database
 		if($_POST == null){
 			return;
 		}
+
 		//Variavel recebe query para inserção na tabela aluno do BD
 		$sql = "INSERT INTO cadastro (
 							id,
@@ -41,6 +42,17 @@ Class Database
 							'{$_POST['telefone']}',
 							DATE('{$_POST['nascimento']}')
 						)";
+/*
+echo json_encode(
+	array(
+		"nome" => $_POST['nome'],
+		"sobre_nome" => $_POST['sobre_nome'],
+		"email" => $_POST['email'],
+		"telefone" => $_POST['telefone'],
+		"nascimento" => $_POST['nascimento'],
+	)
+);
+*/
 		try
 		{
 			$conn = $this->_connect();

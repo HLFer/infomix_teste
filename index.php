@@ -8,7 +8,6 @@ $db->cadastro();
 <head>
     <link rel="icon" href="https://www.lojainfomix.com.br/media/favicon/default/favicon.png" type="image/x-icon">
     <title> Sistema de Cadastro - Infomix</title>
-
 </head>
 
 <body>
@@ -17,7 +16,7 @@ $db->cadastro();
   </header>
 <div class="container" align="center-align">
   <div id="corpo" class="row">
-    <form class="col s12" action="" method="POST">
+    <form id="cadastro" class="col s12" method="POST">
 
       <div class="input-field">
 
@@ -53,11 +52,13 @@ $db->cadastro();
       </div>
 
       <div class="input-field center-align">
-      <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
+      <button id="btnEnviar" class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
         <i class="material-icons right">send</i>
       </button>
     </div>
+    <div id="resposta" align="center"></div>
   </form>
+
   </div>
 </div>
 <footer class="page-footer blue darken-2">

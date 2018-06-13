@@ -5,7 +5,7 @@
 <script src="./js/materialize.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <script src="./js/validation.js"></script>
-
+<script src="./js/script.js"></script>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
